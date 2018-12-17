@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    flex: 1;
+    line-height: 60px;
+}
+
+main {
+    width: 100%;
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    .carTypes {
+        flex: 1;
+        display: flex;
+        span {
+            flex: 1;
+            line-height: 60px;
+        }
+    }
+    .address {
+        flex: 9;
+        dl {
+            float: left;
+            width: 33%;
+            input {
+                width: 60px;
+            }
+        }
+    }
+}
+
+footer {
+    flex: 1;
+}

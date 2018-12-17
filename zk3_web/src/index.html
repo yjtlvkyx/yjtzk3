@@ -6,21 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+
+    <header>
+        同程翼龙酒店机票火车票
+    </header>
+
+    <main>
+        <div class="carTypes">
+            <span>火车票</span>
+            <span>机票</span>
+            <span>酒店</span>
+            <span>地点</span>
+        </div>
+        <div class="address">
+            <dl class="chufa">
+                <dt>出发城市</dt>
+                <dd><input type="text"></dd>
+            </dl>
+            <dl class="change"><span>换</span></dl>
+            <dl class="daoda">
+                <dt>
+                    到达城市
+                </dt>
+                <dd><input type="text"></dd>
+            </dl>
+            <button class="btn">查询火车piao</button>
+        </div>
+    </main>
+    <footer>
+        <span>首页</span>
+        <span>里程兑换</span>
+        <span>订单</span>
+        <span>我的</span>
+    </footer>
     <script src="js/jquery-3.3.1.js"></script>
-    <script>
-        $.ajax({
-            url: "/api/get/train_tickets",
-            data: {
-                dates: "2018-12-12",
-            },
-            success: function(data) {
-                console.log(data)
-            }
-        })
-    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

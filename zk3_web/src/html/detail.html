@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="tabs">
+        <span>12-17</span>
+        <span>12-18</span>
+        <span>12-19</span>
+        <span>12-20</span>
+    </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $.ajax({
+            url: "/api/get/train_tickets",
+            data: {
+                dates: location.search.substr(1),
+            },
+            success: function(data) {
+                console.log(data)
+            }
+        })
+    </script>
+</body>
+
+</html>
